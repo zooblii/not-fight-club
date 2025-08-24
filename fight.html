@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">  
-  <link rel="stylesheet" href="../CSS/main.css">
-  <link rel="stylesheet" href="../CSS/fight.css">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/fight.css">
   <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
   <title>Fight</title>
 </head>
@@ -12,9 +12,9 @@
   <div class="upperSection">
     <p>Character</p>
     <ul class="social-links">
-      <li><a href="home.html"><img class="social-links" src="../images/homeImages/house.png" alt="home"></a></li>
-      <li><a href="./characters.html"><img class="social-links" src="../images/homeImages/user.png" alt="user"></a></li>
-      <li><a href="./settings.html"><img class="social-links" src="../images/homeImages/setting.png" alt="settings"></a></li>
+      <li><a href="home.html"><img class="social-links" src="images/homeImages/house.png" alt="home"></a></li>
+      <li><a href="./characters.html"><img class="social-links" src="images/homeImages/user.png" alt="user"></a></li>
+      <li><a href="./settings.html"><img class="social-links" src="images/homeImages/setting.png" alt="settings"></a></li>
     </ul>
   </div>
   <hr>
@@ -23,7 +23,7 @@
 
     <div class="myFighter">
       <h3 id="player-name">Player</h3>
-      <img class="enemy-img" id="currentAvatar" src="../images/avatar1.png" alt="Player picture">
+      <img class="enemy-img" id="currentAvatar" src="images/avatar1.png" alt="Player picture">
       <div class="health-bar">
         <div id="player-health" class="health-fill"></div>
       </div>
@@ -56,7 +56,7 @@
 
     <div class="Enemy">
       <h3 id="enemy-name">Enemy</h3>
-      <img id="enemyAvatar" class="enemy-img" src="../images/monsters/monster1.png" alt="Enemy picture">
+      <img id="enemyAvatar" class="enemy-img" src="images/monsters/monster1.png" alt="Enemy picture">
       <div class="health-bar">
         <div id="enemy-health" class="health-fill"></div>
       </div>
@@ -91,7 +91,7 @@ defenseInputs.forEach(input => input.addEventListener("change", validateSelectio
 // ----------------------------
 const player = {
   name: localStorage.getItem("playerName") || "Player",
-  avatar: localStorage.getItem("playerAvatar") || "../images/avatar1.png",
+  avatar: localStorage.getItem("playerAvatar") || "images/avatar1.png",
   hp: 120,
   maxHp: 120,
   damage: 20,
@@ -102,7 +102,7 @@ const player = {
 const enemies = [
   {
     name: "Big Sniff",
-    img: "../images/monsters/monster1.jpg",
+    img: "images/monsters/monster1.jpg",
     hp: 100,
     maxHp: 100,
     damage: 15,
@@ -113,7 +113,7 @@ const enemies = [
   },
   {
     name: "Jellybelly",
-    img: "../images/monsters/monster2.jpg",
+    img: "images/monsters/monster2.jpg",
     hp: 110,
     maxHp: 110,
     damage: 10,
@@ -124,7 +124,7 @@ const enemies = [
   },
   {
     name: "Chompchomp",
-    img: "../images/monsters/monster3.jpg",
+    img: "images/monsters/monster3.jpg",
     hp: 140,
     maxHp: 140,
     damage: 18,
