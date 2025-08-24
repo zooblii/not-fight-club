@@ -1,0 +1,98 @@
+hr{
+    color: white;
+    size: 10px;
+     margin-top: 15px;
+}
+
+body {
+  font-family: 'WDXL Lubrifont TC', sans-serif;
+  background-color: black;
+  color: aliceblue;
+}
+
+
+.social-links li {
+  list-style: none;
+}
+
+.upperSection {
+   display: flex;          
+  justify-content: space-between; 
+  align-items: center;    
+  padding: 10px 20px; 
+}
+.social-links {
+  display: flex;
+  gap: 15px; 
+  padding: 0;
+  margin: 0;
+}
+.upperSection p {
+  margin: 0;
+font-size: 25px;
+}
+
+  .social-links img {
+  width: 40px;
+  filter: invert(1)
+}
+
+
+
+/* Центрирование формы на странице */
+.miniForm {
+    background-color: #111; /* темный фон, чтобы гармонировал с body */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Текст внутри формы */
+.miniForm h1, .miniForm h2 {
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+
+/* Поле ввода */
+.miniForm input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.miniForm .buttonReg {
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.miniForm .buttonReg:hover {
+    background-color: #0056b3;
+}
+
+#confirmationMessage {
+    margin-top: 15px;
+    color: lightgreen;
+    font-weight: bold;
+}
+
+body.changeNamePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

@@ -1,0 +1,111 @@
+hr{
+    color: white;
+    size: 10px;
+     margin-top: 15px;
+}
+
+body {
+  font-family: 'WDXL Lubrifont TC', sans-serif;
+  background-color: black;
+  color: aliceblue;
+}
+
+
+.social-links li {
+  list-style: none;
+}
+
+.upperSection {
+   display: flex;          
+  justify-content: space-between; 
+  align-items: center;    
+  padding: 10px 20px; 
+}
+.social-links {
+  display: flex;
+  gap: 15px; 
+  padding: 0;
+  margin: 0;
+}
+.upperSection p {
+  margin: 0;
+font-size: 25px;
+}
+
+  .social-links img {
+  width: 40px;
+  filter: invert(1)
+}
+
+
+    .section {
+      margin-bottom: 20px;
+    }
+    button:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+    button {
+      padding: 8px 15px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+
+.health-bar {
+  width: 200px;
+  height: 20px;
+  border: 2px solid #fff;
+  background-color: #333;
+  border-radius: 6px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.health-fill {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  transition: width 0.3s ease;
+}
+.containerFight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.myFighter,
+.fightUI,
+.Enemy {
+  flex: 1;
+  text-align: center;
+}
+
+.fightUI {
+  max-width: 300px;
+}
+
+.health-bar {
+  width: 200px;
+  height: 20px;
+  border: 2px solid #fff;
+  background-color: #333;
+  border-radius: 6px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.health-fill {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  transition: width 0.3s ease;
+}
+.enemy-img {
+  width: 350px;
+  height: auto;
+}

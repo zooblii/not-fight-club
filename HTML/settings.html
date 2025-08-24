@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">  
+  <link rel="stylesheet" href="../CSS/main.css">
+  <link rel="stylesheet" href="../CSS/characters.css">
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="upperSection">
+    <p>Character</p>
+    <ul class="social-links">
+      <li><a href="home.html"><img class="social-links" src="../images/homeImages/house.png" alt="home"></a></li>
+      <li><a href="./characters.html"><img class="social-links" src="../images/homeImages/user.png" alt="user"></a></li>
+      <li><a href="./settings.html"><img class="social-links" src="../images/homeImages/setting.png" alt="settings"></a></li>
+    </ul>
+  </div>
+  <hr>
+
+
+
+<body class="changeNamePage">
+
+    
+<h1>Change your character name!</h1>
+<div class="miniForm">
+  <h2>Current name: <span id="currentName"></span></h2>
+
+  <form id="changeNameForm" onsubmit="changeName(event)">
+    <input type="text" id="newPlayerName" required placeholder="Enter new name">
+    <button class="buttonReg" type="submit">Save new name</button>
+  </form>
+</div>
+
+<p id="confirmationMessage"></p>
+
+<script>
+  // Отображаем текущее имя при загрузке страницы
+  const savedName = localStorage.getItem('playerName');
+  const currentNameSpan = document.getElementById('currentName');
+  if (savedName) {
+    currentNameSpan.textContent = savedName;
+  } else {
+    currentNameSpan.textContent = "(not set)";
+  }
+
+
+  // Функция для изменения имени
+  function changeName(event) {
+    event.preventDefault(); // предотвращаем перезагрузку страницы
+    const newName = document.getElementById('newPlayerName').value;
+
+    // Сохраняем новое имя в localStorage
+    localStorage.setItem('playerName', newName);
+
+    // Обновляем отображение
+    currentNameSpan.textContent = newName;
+    document.getElementById('confirmationMessage').textContent = "Name changed successfully!";
+
+    // Очистка поля ввода
+    document.getElementById('newPlayerName').value = '';
+  }
+</script>
+
+</body>
+</html>

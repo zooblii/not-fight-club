@@ -1,0 +1,76 @@
+
+
+body {
+  font-family: 'WDXL Lubrifont TC', sans-serif;
+  background-color: black;
+  color: aliceblue;
+}
+
+.containerReg {
+  display: flex;               
+  flex-direction: column;      
+  justify-content: center;     
+  align-items: center;         
+  height: 100vh;               
+  gap: 20px;                   
+}
+
+.containerReg h1 {
+    font-size: 70px;}
+
+.buttonReg {
+  height: 50px;
+  width: 170px;
+  margin: 15px auto 0;
+  display: block;
+  font-family: 'WDXL Lubrifont TC', sans-serif;
+  font-size: 25px;
+
+}
+
+
+.miniForm {
+position: relative;
+
+}
+
+.miniForm h2{
+margin-bottom: 0;
+}
+
+.formReg{
+width: auto;
+}
+
+
+input{
+width: 300px;
+height: 35px;
+}
+
+
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;       
+  object-position: bottom;
+  display: block;
+}
+
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;  
+  display: block;
+}
+
+.containerReg {
+  display: flex;               
+  flex-direction: column;      
+  align-items: center;         
+  height: 100vh;               
+  gap: 20px;                   
+}
